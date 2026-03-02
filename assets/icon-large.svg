@@ -1,36 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" role="img" aria-label="OpenRAG-Skill logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 220" role="img" aria-label="OpenRAG-Skill banner">
   <defs>
-    <linearGradient id="orsCanvas" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F5F2EC"/>
-      <stop offset="100%" stop-color="#E9EFF1"/>
+    <linearGradient id="orsLargeCanvas" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5F1EA"/>
+      <stop offset="100%" stop-color="#E8EFF1"/>
     </linearGradient>
-    <linearGradient id="orsPanel" x1="0" y1="0" x2="0.9" y2="1">
-      <stop offset="0%" stop-color="#14515B"/>
-      <stop offset="100%" stop-color="#103740"/>
+    <linearGradient id="orsLargePanel" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#14525C"/>
+      <stop offset="100%" stop-color="#0F343C"/>
     </linearGradient>
   </defs>
 
-  <rect width="480" height="240" rx="30" fill="url(#orsCanvas)"/>
+  <rect width="560" height="220" rx="28" fill="url(#orsLargeCanvas)"/>
 
-  <rect x="34" y="34" width="156" height="172" rx="34" fill="url(#orsPanel)"/>
-  <rect x="60" y="82" width="44" height="86" rx="14" fill="#7EB3BD" opacity="0.32"/>
-  <path d="M88 58h58l20 20v82a18 18 0 0 1-18 18H88a18 18 0 0 1-18-18V76a18 18 0 0 1 18-18z" fill="#F7F4EE"/>
-  <path d="M146 58v20h20" fill="#DDE7EA"/>
-  <path d="M146 58l20 20" fill="none" stroke="#D2DEE2" stroke-width="3" stroke-linejoin="round"/>
-  <line x1="96" y1="98" x2="135" y2="98" stroke="#8EA4AE" stroke-width="7" stroke-linecap="round"/>
-  <line x1="96" y1="116" x2="135" y2="116" stroke="#8EA4AE" stroke-width="7" stroke-linecap="round"/>
-  <line x1="96" y1="134" x2="126" y2="134" stroke="#8EA4AE" stroke-width="7" stroke-linecap="round"/>
-  <rect x="127" y="126" width="34" height="24" rx="9" fill="#0F7C86"/>
-  <path d="M136 132h-4v12h4" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="144.5" cy="138" r="3" fill="#FFFFFF"/>
-  <path d="M151 132h4v12h-4" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M90 186h56" stroke="#FF6B4A" stroke-width="6" stroke-linecap="round"/>
+  <rect x="30" y="30" width="164" height="160" rx="30" fill="url(#orsLargePanel)"/>
+  <rect x="62" y="78" width="42" height="82" rx="14" fill="#7EAEB7" opacity="0.24"/>
+  <path d="M87 54h58l19 19v76a18 18 0 0 1-18 18H87a18 18 0 0 1-18-18V72a18 18 0 0 1 18-18z" fill="#F6F2EA"/>
+  <path d="M145 54v19h19" fill="#DDE6E9"/>
+  <path d="M145 54l19 19" fill="none" stroke="#D2DDE1" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="95" y1="94" x2="133" y2="94" stroke="#8CA2AD" stroke-width="7" stroke-linecap="round"/>
+  <line x1="95" y1="112" x2="133" y2="112" stroke="#8CA2AD" stroke-width="7" stroke-linecap="round"/>
+  <line x1="95" y1="130" x2="124" y2="130" stroke="#8CA2AD" stroke-width="7" stroke-linecap="round"/>
+  <rect x="126" y="122" width="34" height="24" rx="9" fill="#11707B"/>
+  <path d="M135 128h-4v12h4" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="143.5" cy="134" r="3" fill="#FFFFFF"/>
+  <path d="M150 128h4v12h-4" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <path d="M222 56v132" stroke="#C6D1D6" stroke-width="2"/>
+  <path d="M228 54v112" stroke="#C6D0D4" stroke-width="2"/>
 
-  <text x="248" y="92" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="34" font-weight="700" fill="#102A33">OpenRAG-Skill</text>
-  <text x="248" y="126" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="18" fill="#3C5661">Evidence-first prompt RAG</text>
-  <text x="248" y="150" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="18" fill="#3C5661">for context already provided</text>
-  <path d="M248 170h126" stroke="#0F7C86" stroke-width="4" stroke-linecap="round"/>
-  <text x="248" y="194" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="14" letter-spacing="0.8" fill="#5E7178">Claude Code skill · MIT licensed</text>
+  <text x="262" y="96" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="28" font-weight="600" fill="#223942">Evidence-first prompt RAG</text>
+  <text x="262" y="130" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="28" font-weight="600" fill="#223942">for context already provided</text>
+
+  <path d="M262 158h164" stroke="#11707B" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="284" cy="178" r="5" fill="#11707B"/>
+  <circle cx="342" cy="178" r="5" fill="#7A98A3"/>
+  <circle cx="400" cy="178" r="5" fill="#7A98A3"/>
+  <path d="M289 178h48" stroke="#C1CDD2" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M347 178h48" stroke="#C1CDD2" stroke-width="2.5" stroke-linecap="round"/>
 </svg>

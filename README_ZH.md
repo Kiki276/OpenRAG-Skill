@@ -1,13 +1,15 @@
-# OpenRAG-Skill
-
-<p align="left">
-  <img src="./assets/icon-large.svg" alt="OpenRAG-Skill" width="440" />
-</p>
-
-[![Language English](https://img.shields.io/badge/Language-English-0B84D8?style=flat-square&labelColor=555555)](./README.md)
-[![语言 简体中文](https://img.shields.io/badge/%E8%AF%AD%E8%A8%80-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-E25544?style=flat-square&labelColor=555555)](./README_ZH.md)
-[![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-0B84D8?style=flat-square&labelColor=555555)](https://docs.anthropic.com/en/docs/claude-code/skills)
-[![License MIT](https://img.shields.io/badge/License-MIT-87C400?style=flat-square&labelColor=555555)](./LICENSE)
+<div align="center">
+  <h1>OpenRAG-Skill</h1>
+  <p>
+    <img src="./assets/icon-large.svg" alt="OpenRAG-Skill" width="520" />
+  </p>
+  <p>
+    <a href="./README.md"><img src="https://img.shields.io/badge/Language-English-0B84D8?style=flat-square&labelColor=555555" alt="Language English" /></a>
+    <a href="./README_ZH.md"><img src="https://img.shields.io/badge/%E8%AF%AD%E8%A8%80-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-E25544?style=flat-square&labelColor=555555" alt="Language Simplified Chinese" /></a>
+    <a href="https://docs.anthropic.com/en/docs/claude-code/skills"><img src="https://img.shields.io/badge/Claude%20Code-Skill-0B84D8?style=flat-square&labelColor=555555" alt="Claude Code Skill" /></a>
+    <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-87C400?style=flat-square&labelColor=555555" alt="License MIT" /></a>
+  </p>
+</div>
 
 OpenRAG-Skill 是一个面向 Claude Code 的开源 Skill，适合在资料已经进入对话时使用。它不做站外检索，不接向量库，也不假装知道上下文之外的内容。它做的事情很明确：把已提供文本整理成可引用的证据单元，让每条关键结论都能回到出处，资料不够时就直接拒答。
 

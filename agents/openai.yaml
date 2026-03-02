@@ -3,7 +3,7 @@ interface:
   short_description: "Evidence-first prompt RAG for context already provided"
   icon_small: "./assets/icon-small.svg"
   icon_large: "./assets/icon-large.svg"
-  brand_color: "#11343D"
+  brand_color: "#14525C"
   default_prompt: "Use $rag to answer only from the provided material and cite every material claim."
 
 policy:
