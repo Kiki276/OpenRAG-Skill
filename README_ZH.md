@@ -1,7 +1,7 @@
 <div align="center">
   <h1>OpenRAG-Skill</h1>
   <p>
-    <img src="./assets/icon-large.svg" alt="OpenRAG-Skill" width="520" />
+    <img src="./assets/icon-large.svg" alt="OpenRAG-Skill" width="240" />
   </p>
   <p>
     <a href="./README.md"><img src="https://img.shields.io/badge/Language-English-0B84D8?style=flat-square&labelColor=555555" alt="Language English" /></a>
