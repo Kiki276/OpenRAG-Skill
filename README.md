@@ -1,5 +1,4 @@
 <div align="center">
-  <h1>OpenRAG-Skill</h1>
   <p>
     <img src="./assets/icon-large.svg" alt="OpenRAG-Skill" width="240" />
   </p>
